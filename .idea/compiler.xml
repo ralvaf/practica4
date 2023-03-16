@@ -9,8 +9,5 @@
         <module name="alvaVentas" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="alvaVentas" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>
