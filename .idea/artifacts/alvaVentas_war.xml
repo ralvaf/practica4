@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="alvaVentas:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>alvaVentas</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="alvaVentas-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="alvaVentas:war exploded" />
+    </root>
+  </artifact>
+</component>
