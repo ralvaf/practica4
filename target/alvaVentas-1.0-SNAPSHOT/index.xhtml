@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
+<html xmlns:p="http://primefaces.org/ui"
+      xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
 <h:head>
 
 </h:head>
 <h:body>
+
+    <p:toolbar>
+        <f:facet name="left">
+            <p:commandButton type="push" value="New" image="ui-icon-document" />
+            <p:commandButton type="push" value="Open" image="ui-icon-folder-open"/>
+
+            <span class="ui-separator">
+            <span class="ui-icon ui-icon-grip-dotted-vertical" />
+        </span>
+
+            <p:commandButton type="push" title="Save" image="ui-icon-disk"/>
+            <p:commandButton type="push" title="Delete" image="ui-icon-trash"/>
+            <p:commandButton type="push" title="Print" image="ui-icon-print"/>
+        </f:facet>
+        <f:facet name="right">holas</f:facet>
+    </p:toolbar>
+
+    <p:tabMenu activeIndex="0">
+        <p:menuitem value="Overview" outcome="main" icon="ui-icon-star"/>
+        <p:menuitem value="Demos" outcome="demos" icon="ui-icon-search" />
+        <p:menuitem value="Documentation" outcome="docs" icon="ui-icon-document"/>
+        <p:menuitem value="Support" outcome="support" icon="ui-icon-wrench"/>
+        <p:menuitem value="Social" outcome="social" icon="ui-icon-person" />
+    </p:tabMenu>
+
+
    Hola Mundo a todos
+    <p:inputText value="hola" pt:placeholder="Watermark here"/>
 </h:body>
 </html>
+
+
